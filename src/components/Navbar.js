@@ -1,9 +1,6 @@
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // components
-import Home from "../pages/home/Home";
-import Login from "../pages/login/Login";
-import Signup from "../pages/signup/Signup";
 
 //styles
 import styles from "./Navbar.module.css";
@@ -13,7 +10,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <ul>
         <li className={styles.title}>
-          <Link exact to="/">
+          <Link  to="/">
             myMoney
           </Link>
         </li>
