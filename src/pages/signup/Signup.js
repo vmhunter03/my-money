@@ -3,7 +3,6 @@ import { useSignup } from "../../hooks/useSignup";
 //styles
 import styles from "./Signup.module.css";
 
-import React from "react";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
