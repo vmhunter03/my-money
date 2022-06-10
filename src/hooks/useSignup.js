@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.production.min";
+import { useState } from "react";
 import { projectAuth } from "../firebase/config";
 export const useSignup = () => {
   const [error, setError] = useState(null);
@@ -23,8 +23,8 @@ export const useSignup = () => {
       // add display name to user
       await res.user.updateProfile({ displayName });
 
-      setIsPending(false)
-      setError(null)
+      setIsPending(false);
+      setError(null);
     } catch (err) {
       console.log(err.message);
       setError(err.message);
